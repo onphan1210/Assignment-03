@@ -1,0 +1,21 @@
+@media (max-width: 600px) {
+  #goals,
+  #team,
+  #scopes,
+  #primary,
+  #timeline {
+    border: none;
+  }
+  #goals .icon {
+    display: none;
+  }
+  #goals .row-detail {
+    margin-left: -40px;
+  }
+  #team .icon {
+    display: none;
+  }
+  #team .row-detail {
+    margin-left: 10px;
+  }
+}

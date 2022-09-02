@@ -1,0 +1,76 @@
+@media (max-width: 600px) {
+  /* ẩn avatar */
+  .avatar {
+    display: none;
+  }
+  /* chỉnh lại nav-bar */
+  #nav-bar .container {
+    display: block;
+    border: none;
+    text-align: left;
+  }
+  #nav-bar .container a {
+    display: block;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+  }
+  /* chỉnh lại target */
+  #about #target,
+  #about #personal-info {
+    text-align: left;
+    padding-left: 10px;
+    margin-left: 0;
+  }
+  /* chỉnh lại chứng chỉ */
+  #certificate .cer-1 img,
+  #certificate .cer-2 img,
+  #certificate .cer-3 img,
+  #certificate .cer-4 img {
+    border: none;
+  }
+  #certificate .cer-1,
+  #certificate .cer-2,
+  #certificate .cer-3,
+  #certificate .cer-4 {
+    border-bottom: 1px solid #d6c08d;
+  }
+  #certificate .cer-4 {
+    border-bottom: none;
+  }
+  #certificate .cer-11,
+  #certificate .cer-22,
+  #certificate .cer-33,
+  #certificate .cer-44 {
+    padding-left: 16px;
+    margin-top: 10px;
+  }
+  .certificate-detail {
+    margin-bottom: 30px;
+  }
+  /* chỉnh lại dự án */
+  #project .project-tags-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 24px;
+    border-left: 1px solid #ced4da;
+    border-right: 1px solid #ced4da;
+    text-align: center;
+    font-size: 10px;
+  }
+  .project-tags {
+    margin-bottom: 50px;
+  }
+  /* chỉnh lại footer */
+  .footer-link:link,
+  .footer-link:visited {
+    text-decoration: none;
+    color: #f1f3f5;
+  }
+  .footer-link:hover,
+  .footer-link:active {
+    cursor: pointer;
+    color: #f1f3f5;
+  }
+}
