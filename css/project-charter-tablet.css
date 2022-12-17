@@ -1,9 +1,135 @@
-@media (min-width: 600px) and (max-width: 992px) {
+@media (min-width: 576px) and (max-width: 992px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: auto;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: "lato", sans-serif;
+    background-color: #fff;
+    color: #495057;
+    margin: auto;
+  }
+  .icon {
+    width: 30px;
+    fill: #495057;
+  }
+  #primary .icon {
+    color: #fff;
+  }
+  .row-detail {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+
+  .sub-header {
+    color: blue;
+    font-weight: bolder;
+    border-bottom: 1px solid #66a80f;
+    padding-bottom: 8px;
+  }
+  .container {
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.5);
+  }
   #goals,
   #team,
   #scopes,
   #primary,
   #timeline {
-    border: none;
+    padding: 8px;
+    background-color: #f8f9fa;
+    border-top: 20px solid blue;
+    border-left: 20px solid blue;
+  }
+  #scopes,
+  #primary,
+  #timeline {
+    border-bottom: 20px solid blue;
+  }
+  #timeline {
+    border-right: 20px solid blue;
+  }
+  .goal-row {
+    border-bottom: 1px solid #e9ecef;
+  }
+  #timeline .row-detail {
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #74c0fc;
+  }
+  h5 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .timeline-icon {
+    font-size: larger;
+    padding: 0px;
+    text-align: center;
+    background-color: #9775fa;
+    border-radius: 50%;
+    border: 1px solid #ffc078;
+    color: #fff;
+  }
+  /* edit for tablet */
+  #goals,
+  #team,
+  #scopes,
+  #primary,
+  #timeline {
+    border: 20px solid blue;
+  }
+  #goals,
+  #team,
+  #scopes,
+  #primary {
+    border-bottom: none;
+  }
+  /* #goals .icon {
+    display: none;
+  } */
+  #goals .row-detail {
+    margin-left: -35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #goals .icon {
+    align-self: center;
+  }
+  #scopes .scope-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #scopes .icon {
+    align-self: center;
+  }
+
+  #team .row-detail {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #team .icon {
+    align-self: center;
+  }
+  #primary .row-detail {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #primary .icon {
+    align-self: center;
+  }
+  #timeline .row-detail {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
