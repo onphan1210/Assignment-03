@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<!--  -->
+<!-- Khai báo kiểu tài liệu html5 -->
 <html lang="en">
+  <!-- khai báo ngôn ngữ -->
   <head>
+    <!--  khung chứa siêu dữ liệu – metadata (dữ liệu về dữ liệu) -->
     <meta charset="UTF-8" />
+    <!-- mã hóa của bộ mã meta của mã hóa ký tự utf-8 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- chọn phiên bản của Internet Explorer  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- cho trình duyệt biết website sẽ được hiển thị thế nào -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <!-- cài đặt bootstrap -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/laptop.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/font.css" />
+    <!-- link với css -->
     <title>Assignment 03</title>
+    <!-- tiêu đề trên tab web -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato:wght@400;700&family=Rubik:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- link đến font google -->
   </head>
   <body>
     <header>
@@ -41,6 +50,7 @@
         <nav class="container">
           <a href="#about" class="nav-bar-content space1"
             ><i class="icon-user"></i>Thông tin
+            <!-- chèn icon từ file co sẳn qua html -->
           </a>
           <a href="#job-info" class="nav-bar-content space2"
             ><i class="icon-doc-text-inv"></i>Lý lịch</a
@@ -49,7 +59,7 @@
             class="avatar"
             src="./images/hinhthe.png"
             alt="avatar"
-            width="150"
+            width="150px"
             height="180px"
           />
           <a href="#certificate" class="nav-bar-content space3"
@@ -62,8 +72,11 @@
       </section>
       <!-- target + personal info -->
       <section id="about" class="bg-grey">
+        <!-- bootstrap background grey -->
         <div class="container row justify-content-center m-auto">
+          <!-- bootstrap: row=>flex/căn giữa/margin auto -->
           <div id="target" class="col-lg-6 col-sm-6 col-12">
+            <!-- bootstrap: số cột sẽ chiếm theo 3 loại kích thước màn hình (tổng 12 cột như lý thuyết) -->
             <h1 class="section-title">Mục tiêu nghề nghiệp</h1>
             <p>
               Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
@@ -74,8 +87,10 @@
             </p>
           </div>
           <div id="personal-info" class="col-lg-6 col-sm-6 col-12">
+            <!-- bootstrap: số cột sẽ chiếm theo 3 loại kích thước màn hình (tổng 12 cột như lý thuyết) -->
             <h1 class="section-title">Thông tin cá nhân</h1>
             <ul class="mt-40 info">
+              <!-- boottrap: margin top (giá trị từ 0-5) -->
               <li><span>Giới tính</span> : Nam</li>
               <li><span>Ngày sinh</span> : 12/10/1989</li>
               <li><span>Điện thoại</span> : (+84) 908684539</li>
@@ -94,10 +109,12 @@
     <!-- job info -->
     <section id="job-info">
       <div class="container row gap-3 justify-content-center m-auto">
+        <!-- bootstrap: row=>flex/căn giữa/mảgin auto  -->
         <!-- experience -->
         <div
           class="tags experience col-lg-3 col-sm-5 col-12 order-lg-0 order-sm-0 order-0"
         >
+          <!-- bootstrap: chia cột theo 3 loại kích màn hình/ sắp xếp thứ tự hiển thị theo 3 loại -->
           <h1 class="section-title">Kinh nghiệm</h1>
           <i class="ic-toolbox tags-icon"></i>
           <div class="tags-content">
@@ -141,6 +158,7 @@
         <div
           class="tags education col-lg-3 col-sm-5 col-12 order-lg-1 order-sm-3 order-4"
         >
+          <!-- bootstrap: chia cột theo 3 loại kích màn hình/ sắp xếp thứ tự hiển thị theo 3 loại -->
           <h1 class="section-title">Học vấn</h1>
           <i class="ic-pencil tags-icon"></i>
           <div class="tags-content">
@@ -166,6 +184,7 @@
         <div
           class="tags activity col-lg-3 col-sm-5 col-12 order-lg-2 order-sm-1 order-3"
         >
+          <!-- bootstrap: chia cột theo 3 loại kích màn hình/ sắp xếp thứ tự hiển thị theo 3 loại -->
           <h1 class="section-title">Hoạt động</h1>
           <i class="ic-toolbox tags-icon"></i>
           <div class="tags-content">
@@ -198,6 +217,7 @@
         <div
           class="tags hobby col-lg-3 col-sm-5 col-12 order-lg-3 order-sm-5 order-5"
         >
+          <!-- bootstrap: chia cột theo 3 loại kích màn hình/ sắp xếp thứ tự hiển thị theo 3 loại -->
           <h1 class="section-title">Sở thích</h1>
           <i class="ic-telescope tags-icon"></i>
           <div class="tags-content">
@@ -223,6 +243,7 @@
         <div
           class="tags language col-lg-3 col-sm-5 col-12 order-lg-4 order-sm-4 order-2"
         >
+          <!-- bootstrap: chia cột theo 3 loại kích màn hình/ sắp xếp thứ tự hiển thị theo 3 loại -->
           <h1 class="section-title">Ngôn ngữ</h1>
           <i class="ic-mic tags-icon"></i>
           <div class="tags-content">
@@ -242,6 +263,7 @@
         <div
           class="tags skills col-lg-3 col-sm-5 col-12 order-lg-5 order-sm-2 order-1"
         >
+          <!-- bootstrap: chia cột theo 3 loại kích màn hình/ sắp xếp thứ tự hiển thị theo 3 loại -->
           <h1 class="section-title">Kỹ năng</h1>
           <i class="ic-tools-2 tags-icon"></i>
           <div class="tags-content">
@@ -271,49 +293,62 @@
     </section>
     <!-- certificate -->
     <section id="certificate" class="bg-grey">
+      <!-- boottrap: nề grey -->
       <div class="container row gap-4 justify-content-center m-auto">
+        <!-- boottrap: flex/gap (0-5)... -->
         <div class="section-title col-lg-12 col-sm-12 col-12">
+          <!-- boottrap: -->
           <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
         </div>
         <div class="certificate-detail row cer-1 col-lg-6 col-sm-6 col-12">
+          <!-- boottrap: -->
           <img
             class="img-fluid col-lg-6 col-sm-12 col-12"
             src="./images/Cert_WEB.png"
             alt="web certificate"
           />
+          <!-- Images in Bootstrap are made responsive with .img-fluid. This applies max-width: 100%; and height: auto; to the image so that it scales with the parent element. -->
           <div class="cer-11 col-lg-6 col-sm-12 col-12">
+            <!-- boottrap: -->
             <h3>Chứng chỉ lập trình web-funix</h3>
             <p>- Chứng chỉ chương trình CCDN<br />- GPA 8.6</p>
           </div>
         </div>
         <div class="certificate-detail cer-2 row col-lg-6 col-sm-6 col-12">
+          <!-- boottrap: -->
           <img
             class="img-fluid col-lg-6 col-sm-12 col-12"
             src="./images/Cert_PRF.png"
             alt="javascript certificate"
           />
+          <!-- boottrap: -->
           <div class="cer-22 col-lg-6 col-sm-12 col-12">
+            <!-- boottrap: -->
             <h3>Chứng chỉ lập trình javascript-funix</h3>
             <p>- Chứng chỉ chương trình CCDN<br />- GPA 8.9</p>
           </div>
         </div>
         <div class="certificate-detail cer-3 row col-lg-6 col-sm-6 col-12">
+          <!-- boottrap: -->
           <img
             class="img-fluid col-lg-6 col-sm-12 col-12"
             src="./images/Cert_DBI.png"
             alt="database certificate"
           />
           <div class="cer-33 col-lg-6 col-sm-12 col-12">
+            <!-- boottrap: -->
             <h3>Chứng chỉ thiết kế database-funix</h3>
             <p>- Chứng chỉ chương trình CCDN<br />- GPA 8.0</p>
           </div>
         </div>
         <div class="certificate-detail cer-4 row col-lg-6 col-sm-6 col-12">
+          <!-- boottrap: -->
           <img
             class="img-fluid col-lg-6 col-sm-12 col-12"
             src="./images//bằng kỹ sư.jpg"
             alt="university of technology certificate"
           />
+          <!-- boottrap: -->
           <div class="cer-44 col-lg-6 col-sm-12 col-12">
             <h3>Bằng tốt nghiệp đại học Bách Khoa - HCM</h3>
             <p>- GPA 8.0</p>
@@ -324,10 +359,13 @@
     <!-- project -->
     <section id="project">
       <div class="container row g-5 m-auto">
+        <!-- boottrap: -->
         <div class="col-lg-12 col-sm-12 col-12">
+          <!-- boottrap: -->
           <h1 class="section-title">Dự án</h1>
         </div>
         <div class="project-tags col-lg-4 col-sm-4 col-12">
+          <!-- boottrap: -->
           <img src="./images/project_1.png" alt="project one" width="100%" />
           <div class="project-tags-name">
             <a
@@ -367,6 +405,7 @@
           </div>
         </div>
         <div class="project-tags col-lg-4 col-sm-4 col-12">
+          <!-- boottrap: -->
           <img src="./images/project_2.png" alt="project two" width="100%" />
           <div class="project-tags-name">
             <a
@@ -407,6 +446,7 @@
           </div>
         </div>
         <div class="project-tags col-lg-4 col-sm-4 col-12">
+          <!-- boottrap: -->
           <img src="./images/project_3.png" alt="project three" width="100%" />
           <div class="project-tags-name">
             <a
@@ -449,6 +489,7 @@
     </section>
     <!-- footer -->
     <section id="footer" class="bg-grey">
+      <!-- boottrap: -->
       <div class="container">
         <ul>
           <li>
